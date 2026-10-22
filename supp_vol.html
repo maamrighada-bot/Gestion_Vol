@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>supprimer un vol</title>
+    <link rel="Stylesheet" href="style.css">
+</head>
+<body id="sbody">
+    <header>
+        
+        <img src="logo.jpg" id="img">
+        <div><a href="index.html" class="a">Retour au Acceuil</a>
+            <a href="modifier.html" class="a"> Modifier un vol</a>
+            <a href="ajouter_vol.html" class="a">  Ajouter un vol</a>
+            <a href="liste_vols.php" class="a">Voir la  Liste des vols</a>
+        </div>
+         <h1>Suppression d'un vol</h1>
+    </header>
+   
+    <section class="card">
+        <form action="supp_vol.php" method="post">
+            <label> Numéro de vol à supprimer :</label>
+            <input type="text" name="nmvol" id="numv" ><br><br>
+            <button type="submit" class="bt">Supprimer</button><br><br>
+        </form>
+    </section>
+    <footer><p>© 2025 Tous droits réservés</p></footer>
+</body>
+</html>

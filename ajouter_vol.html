@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajouter un vol</title>
+  <link rel="Stylesheet" href="style.css">
+  <script lang="javascript" src="script.js"></script>
+</head>
+<body id="ajouter">
+  <header>
+    
+    <img src="logo.jpg" id="img">
+    <div><a href="index.html" class="a">Retour au Acceuil</a>
+      <a href="modifier.html" class="a"> Modifier un vol</a>
+      <a href="supp_vol.html" class="a"> Supprimer un vol</a>
+      <a href="liste_vols.php" class="a">Voir la  Liste des vols</a>
+    </div>
+      <h1> Ajouter un vol</h1>
+  </header>
+
+  <section class="card">
+    <form action="ajouter_vol.php" method="post">
+      <label>Numéro de vol : </label>
+      <input type="text" name="numero_vol" id="num" ><br><br>
+      <label>Destination : </label>
+      <input type="text" name="destination" id="des" ><br><br>
+      <label>Epoque :</label>
+      <input type="time" name="epoque" id="epoque" ><br><br>
+      <label>Statut :</label>
+      <select name="statut" id="statut">
+        <option>Selectionner </option>
+        <option >Arriver à temps</option>
+        <option >Retardé</option>
+        <option >Annulé</option>
+      </select><br><br>
+      <button type="button" onclick="verif()" class="bt">Vérifier</button>
+      <button type="submit" class="bt">Ajouter</button>
+      <button type="reset" class="bt">Anuuler</button><br>
+    </form>
+  </section>
+  <footer> <p>© 2025  Tous droits réservés</p></footer>
+</body>
+</html>
